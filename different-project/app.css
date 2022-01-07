@@ -1,0 +1,395 @@
+/* GLOBAL STYLING & VARIABLES */
+
+/* Resetting margins & padding because different browsers use different margins & paddings */
+/* box-sizing: border-box is the most most intuitive way to create new elements. 
+Reason: the borders & padding is calculated into the total width of the element - makes it easier to track element shapes. */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Why is font-size 62.5%? Answer: Rems then become 16px * 62.5% = 10px
+That makes it easier to work with rems (1rem = 10px).*/
+html {
+    font-size: 62.5%;
+    font-family: 'Manrope', 'sans-serif';
+}
+
+:root {
+    /* Background & other elements */
+    --background-main: hsl(230, 60%, 8%);
+    --background-element: hsl(206, 84%, 22%);
+    --accent: hsl(179, 80%, 58%);
+
+    /* Typography */
+    --white: hsl(0, 0%, 100%);
+    --gray-main: hsl(225, 14%, 53%);
+    --error-red: hsl(343, 100%, 58%);
+
+    /* Font size */
+    --heading: 3.2rem;
+    --main: 1.5rem;
+    --heading-secondary: 4rem;
+    --heading-tertiary: 2.4rem;
+    --heading-quartenary: 1.8rem;
+}
+
+body {
+    background-color: var(--background-main);
+    font-size: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    padding: 4rem 2.4rem;
+}
+
+
+/* Headings & paragraphs */
+h1 {
+    font-size: var(--heading);
+    text-align: center;
+}
+
+h2 {
+    font-size: var(--heading-secondary);
+    color: var(--white);
+    margin: 0 0 1.9rem 0;
+}
+
+h3 {
+    font-size: var(--heading-tertiary);
+    text-align: center;
+    margin: 0 0 2.7rem 0;
+    color: var(--white);
+}
+
+h4 {
+    font-size: var(--heading-quartenary);
+    text-align: center;
+    margin: 0 0 1.1rem 0;
+    color: var(--white);
+}
+
+p {
+    font-size: var(--main);
+    color: var(--gray-main);
+    line-height: 2.5rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+ul {
+    color: var(--white);
+    list-style-type: none;
+    font-weight: 300;
+}
+
+
+/* Header */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 6.6rem 0;
+}
+
+.illustration-hero {
+    background-image: url('assets/illustration-hero-mobile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* I don't understand how to increase the width of the img without interfering 
+    with the layout (margin, padding) of the html doc. */
+    height: 23.1rem;
+    margin: 0 -2.5rem 4.8rem -2.5rem;
+}
+
+/* .illustration {
+    height: 23.1rem;
+    margin: 0 -4rem;
+    padding: 0;
+    margin: 0;
+} */
+
+.heading-style {
+    color: var(--accent);
+}
+
+.h1-main {
+    margin: 0 0 2.3rem 0;
+    color: var(--white);
+}
+
+.paragraph-header {
+    margin: 0 0 3.2rem 0;
+}
+
+.paragraph-light {
+    font-weight: 200;
+}
+
+.paragraph-seethrough-white {
+    color: hsl(0, 0%, 100%, 59.73%);
+}
+
+.icon-scroll {
+    background-image: url('assets/icon-scroll.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Absolute values are probably better with icons than the relative ones */
+    height: 42px;
+    margin: 0 0 3.2rem 0;
+}
+
+
+/* USP Section */
+
+.usp-container {
+    margin: 11.2rem 0 0 0;
+}
+
+.usp {
+    margin: 0 0 5.6rem 0;
+}
+
+.usp-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12.4rem;
+    width: 12rem;
+    background-color: var(--background-element);
+    border-radius: 45px;
+    margin: 0 auto 3.2rem auto;
+}
+
+/* There must be a better way to center the image, both within the square div & body itself. */
+.passions-icon-child {
+    height: 8rem;
+    width: 6.6rem;
+    margin: 0 0 0.5rem 1rem;
+}
+
+.financial-freedom-icon-child {
+    height: 6.7rem;
+    width: 5.6rem;
+}
+
+.lifestyle-icon-child {
+    height: 7.1rem;
+    width: 6rem;
+}
+
+.work-anywhere-icon-child {
+    height: 5.6rem;
+    width: 7.8rem;
+}
+
+
+/* PRICING SECTION */
+
+.pricing-container-main {
+    margin: 8.8rem 0 0 0;
+}
+
+.pricing-container-child {
+    margin: 7.9rem 0 0 0;
+}
+
+.pricing-heading {
+    text-align: left;
+}
+
+.pricing-subcontainer {
+    height: 43.6rem;
+    width: 32.7rem;
+    border-radius: 8px;
+    padding: 4.9rem 2.9rem 3.2rem 2.9rem;
+    margin: 0 auto 3.2rem auto;
+    position: relative;
+}
+
+/* Free Pricing */
+
+.free-pricing {
+    background-color: var(--background-element);
+    margin: 0 auto 6.5rem auto;
+}
+
+.paragraph-pricing {
+    text-align: left;
+}
+
+.pricing-heading {
+    margin: 0 0 1.9rem 0;
+}
+
+/* When spacing internal elements, I'm never sure whether to use padding or margin. */
+.free-pricing-child {
+    margin: 5.1rem 0 0 0;
+}
+
+.check-mark-free {
+    color: var(--accent);
+    padding-right: 1.5rem;
+    margin: 0 0 2rem 0;
+}
+
+.free-pricing-icon {
+    position: absolute;
+    bottom: 41.3rem;
+}
+
+/* Paid Pricing */
+
+.paid-pricing {
+    background-color: var(--accent);
+    height: 44.8rem;
+}
+
+.paid-pricing-icon {
+    position: absolute;
+    bottom: 41.6rem;
+}
+
+.pricing-paid-text {
+    color: hsl(230, 60%, 8%, 60%);
+}
+
+p.pricing-paid-text {
+    margin: 0 0 2.6rem 0;
+}
+
+
+.paid-pricing-child {
+    position: relative;
+}
+
+.paid-pricing-heading {
+    color: var(--background-main);
+}
+
+.monthly-price {
+    position: absolute;
+    color: hsl(230, 60%, 8%, 60%);
+    font-size: var(--main);
+    top: 1.6rem;
+    left: 14.7rem;
+    font-weight: 300;
+}
+
+.check-mark-paid {
+    color: var(--background-element);
+    padding-right: 1.5rem;
+    margin: 0 0 2rem 0;
+}
+
+.paid-pricing ul {
+    color: var(--background-main);
+    font-weight: 400;
+}
+
+/* NOTIFICATION SECTION */
+.notification-heading {
+    margin: 0 0 3.1rem 0;
+}
+
+.notification-footer-squiggle {
+    background-image: url('assets/bg-footer-squiggle.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 8rem;
+}
+
+/* .footer-squiggle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+    height: 8rem;
+    width: 36.4rem;
+    margin: 0 -20rem 0 0;
+} */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 12rem;
+    margin: 0 0 12.4rem 0;
+    border: 0;
+}
+
+.form-input-email {
+    width: 32.7rem;
+    height: 4.8rem;
+    border-radius: 24px;
+    background-color: var(--background-element);
+    border: 0;
+    padding: 0 0 0 1.8rem;
+    font-size: var(--main);
+    color: var(--white);
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.form-input-email:active {
+    border: 0;
+    border: 3px solid var(--accent);
+    font-size: var(--main);
+    outline: none;
+}
+
+.form-input-email:focus {
+    border: 3px solid var(--accent);
+    font-size: var(--main);
+    outline: none;
+}
+
+.form-input-email::placeholder {
+    font-size: var(--main);
+    /* padding: 0 0 0 1.8rem; */
+    color: hsl(0, 0%, 100%, 40%);
+    font-weight: 800;
+    letter-spacing: 1px;
+    border: 0;
+}
+
+input[type=submit] {
+    width: 32.7rem;
+    height: 4.8rem;
+    border-radius: 24px;
+    background-color: var(--accent);
+    border: 0;
+    font-size: var(--main);
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--background-element);
+    border: 0;
+}
+
+input[type=submit]:hover {
+    color: var(--white);
+    border: 3px solid var(--accent);
+    background-color: var(--background-main);
+    cursor: pointer;
+}
+
+input[type=submit]:active {
+    color: var(--white);
+    border: 3px solid var(--accent);
+    background-color: var(--background-main);
+    cursor: pointer;
+}
+
+input:focus::placeholder {
+    color: var(--white);
+}
