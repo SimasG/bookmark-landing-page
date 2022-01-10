@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="app.css">
-  
+
   <title>Frontend Mentor | Bookmark landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -28,15 +28,20 @@
       <div class="header-container">
         <nav>
           <img src="images/logo-bookmark.svg" alt="logo" class="logo">
-          <button class="hamburger" id="hamburger">
+          <!-- <button class="hamburger" id="hamburger">
             <i class="fas fa-bars"></i>
-          </button>
+          </button> -->
           <ul class="nav-ul" id="nav-ul">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#login">Login</a></li>
+            <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#login" class="nav-link">Login</a></li>
           </ul>
+          <button class="hamburger" id="hamburger">
+            <span class="bar"></span> 
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
         </nav>
 
         <div class="hero">
@@ -155,5 +160,6 @@
       </p>
     </footer>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
