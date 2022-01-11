@@ -68,7 +68,7 @@ p {
   text-align: center;
   font-weight: 400;
   opacity: 0.5;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 p .paragraph-faq {
@@ -86,6 +86,16 @@ button {
   text-align: center;
   background: #5368df;
   line-height: 2.5rem;
+  padding: 1rem;
+  border: none;
+}
+
+button .button {
+  border-radius: 0.5rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  -webkit-box-shadow: #7487dc 0px 10px 10px -12px;
+          box-shadow: #7487dc 0px 10px 10px -12px;
 }
 
 .main-container {
@@ -157,7 +167,7 @@ nav .nav-ul li a {
   background-color: black;
 }
 
-/* Hero Styling */
+/* Hero Section */
 .hero {
   display: relative;
 }
@@ -181,6 +191,98 @@ nav .nav-ul li a {
   width: 77.7rem;
   margin: -24rem 0 5rem 0;
   left: 13%;
+  z-index: -2;
+  border-radius: 316.5px;
+}
+
+.hero-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0 14rem 0;
+}
+
+.hero-buttons .hero-button-chrome {
+  margin-right: 0.7rem;
+  border-radius: 0.5rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  -webkit-box-shadow: #7487dc 0px 10px 10px -12px;
+          box-shadow: #7487dc 0px 10px 10px -12px;
+  width: 15.1rem;
+}
+
+.hero-buttons .hero-button-firefox {
+  margin-left: 0.7rem;
+  border-radius: 0.5rem;
+  width: 15.1rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  color: #252b46;
+  opacity: 0.8;
+  background-color: #F7F7F7;
+  -webkit-box-shadow: #7487dc 0px 10px 10px -12px;
+          box-shadow: #7487dc 0px 10px 10px -12px;
+}
+
+.feature-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  margin: 3.5rem auto;
+}
+
+.feature-list .feature-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: var(--list-text);
+  color: #252b46;
+  padding: 1.95rem 0;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.feature-list hr {
+  border-top: 1px solid rgba(73, 93, 207, 0.2);
+  width: 100%;
+}
+
+.illustration-bookmark-1 {
+  position: relative;
+  background-image: url("images/illustration-features-tab-1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* I don't understand how to increase the width of the img without interfering 
+    with the layout (margin, padding) of the html doc. */
+  height: 20.1rem;
+  margin: 5rem -2.5rem 4.8rem -2.5rem;
+}
+
+.illustration-bookmark-2 {
+  position: relative;
+  background: #5368df;
+  height: 20.3rem;
+  width: 55.7rem;
+  margin: -21.4rem 0 3.5rem 0;
+  right: 90%;
   z-index: -2;
   border-radius: 316.5px;
 }
