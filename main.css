@@ -71,11 +71,6 @@ p {
   padding: 0.5rem;
 }
 
-p .paragraph-faq {
-  opacity: 1;
-  font-size: 20px;
-}
-
 .paragraph-faq {
   opacity: 1;
 }
@@ -88,14 +83,12 @@ button {
   line-height: 2.5rem;
   padding: 1rem;
   border: none;
-}
-
-button .button {
   border-radius: 0.5rem;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   -webkit-box-shadow: #7487dc 0px 10px 10px -12px;
           box-shadow: #7487dc 0px 10px 10px -12px;
+  cursor: pointer;
 }
 
 .main-container {
@@ -153,6 +146,8 @@ nav .nav-ul li a {
   font-size: var(--main-2);
   cursor: pointer;
   display: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .bar {
@@ -182,6 +177,7 @@ nav .nav-ul li a {
     with the layout (margin, padding) of the html doc. */
   height: 25rem;
   margin: 5rem -2.5rem 4.8rem -2.5rem;
+  z-index: 0;
 }
 
 .hero-illustration-2 {
@@ -191,7 +187,7 @@ nav .nav-ul li a {
   width: 77.7rem;
   margin: -24rem 0 5rem 0;
   left: 13%;
-  z-index: -2;
+  z-index: -1;
   border-radius: 316.5px;
 }
 
@@ -259,9 +255,13 @@ nav .nav-ul li a {
   opacity: 0.7;
 }
 
-.feature-list hr {
+.feature-list .hr-features {
   border-top: 1px solid rgba(73, 93, 207, 0.2);
   width: 100%;
+}
+
+.features-bookmark {
+  position: relative;
 }
 
 .illustration-bookmark-1 {
@@ -287,6 +287,103 @@ nav .nav-ul li a {
   border-radius: 316.5px;
 }
 
+.more-info-button {
+  margin: 1rem auto;
+  display: block;
+  width: 11.4rem;
+}
+
+.download-extension-container {
+  margin: 9rem auto;
+}
+
+.download-extension-subcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.download-subcontainer-child {
+  margin: 2rem auto;
+  padding: 2.4rem;
+  -webkit-box-shadow: #7487dc 10px 10px 10px -12px;
+          box-shadow: #7487dc 10px 10px 10px -12px;
+}
+
+.download-button {
+  width: 23.2rem;
+}
+
+.chrome-hero {
+  padding-bottom: 3rem;
+}
+
+.browser-heading {
+  margin-bottom: -0.5rem;
+}
+
+.logo-chrome {
+  position: relative;
+  background-image: url("images/logo-chrome.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* I don't understand how to increase the width of the img without interfering 
+    with the layout (margin, padding) of the html doc. */
+  height: 10rem;
+  margin: 2rem 0rem 2.8rem 0rem;
+}
+
+.firefox-hero {
+  padding-bottom: 3rem;
+}
+
+.logo-firefox {
+  position: relative;
+  background-image: url("images/logo-firefox.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* I don't understand how to increase the width of the img without interfering 
+    with the layout (margin, padding) of the html doc. */
+  height: 10rem;
+  margin: 2rem 0rem 2.8rem 0rem;
+}
+
+.opera-hero {
+  padding-bottom: 3rem;
+}
+
+.logo-opera {
+  position: relative;
+  background-image: url("images/logo-opera.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* I don't understand how to increase the width of the img without interfering 
+    with the layout (margin, padding) of the html doc. */
+  height: 10rem;
+  margin: 2rem 0rem 2.8rem 0rem;
+}
+
+.hr-download {
+  border-top: 3px dotted rgba(73, 93, 207, 0.2);
+  width: 100%;
+  padding-top: 2.4rem;
+  border-left: none;
+  border-right: none;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 767px) {
   /* .nav-ul.show {
@@ -308,6 +405,7 @@ nav .nav-ul li a {
     text-align: center;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    z-index: 1;
   }
   .nav-ul.active {
     left: 0;

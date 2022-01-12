@@ -82,10 +82,10 @@ p {
     opacity: 0.5;
     padding: 0.5rem;
     // Why doesn't the below work?
-    .paragraph-faq {
-        opacity: 1;
-        font-size: 20px;
-    }
+    // .paragraph-faq {
+    //     opacity: 1;
+    //     font-size: 20px;
+    // }
 }
 
 .paragraph-faq {
@@ -100,13 +100,18 @@ button {
     line-height: 2.5rem;
     padding: 1rem;
     border: none;
-    // Why doesn't this work?
-    .button {
-        border-radius: 0.5rem;
-        font-family: 'Rubik', sans-serif;
-        font-weight: 500;
-        box-shadow: hsl(229, 60%, 66%) 0px 10px 10px -12px;
-    }
+    border-radius: 0.5rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    box-shadow: hsl(229, 60%, 66%) 0px 10px 10px -12px;
+    cursor: pointer;
+    // Why doesn't the below work?
+    // .button {
+    //     border-radius: 0.5rem;
+    //     font-family: 'Rubik', sans-serif;
+    //     font-weight: 500;
+    //     box-shadow: hsl(229, 60%, 66%) 0px 10px 10px -12px;
+    // }
 }
 
 .main-container {
@@ -161,6 +166,7 @@ button {
     font-size: var(--main-2);
     cursor: pointer;
     display: none;
+    box-shadow: none;
   }
   
   .bar {
@@ -190,6 +196,7 @@ button {
     with the layout (margin, padding) of the html doc. */
     height: 25rem;
     margin: 5rem -2.5rem 4.8rem -2.5rem;
+    z-index: 0;
 }
 
 .hero-illustration-2 {
@@ -199,7 +206,7 @@ button {
     width: 77.7rem;
     margin: -24rem 0 5rem 0;
     left: 13%;
-    z-index: -2;
+    z-index: -1;
     border-radius: 316.5px;
 }
 
@@ -249,10 +256,14 @@ button {
         opacity: 0.7;
         // border-bottom: 1px solid rgba(73, 93, 207, 0.2);
     }
-    hr {
+    .hr-features {
         border-top: 1px solid rgba(73, 93, 207, 0.2);
         width: 100%;
     }
+}
+
+.features-bookmark {
+    position: relative;
 }
 
 .illustration-bookmark-1 {
@@ -278,9 +289,97 @@ button {
     border-radius: 316.5px;
 }
 
+.more-info-button {
+    margin: 1rem auto;
+    display: block;
+    width: 11.4rem;
+}
 
 
+// Download Extension Section
+.download-extension-container {
+    margin: 9rem auto;
+}
 
+.download-extension-subcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-subcontainer-child {
+    margin: 2rem auto;
+    padding: 2.4rem;
+    box-shadow: hsl(229, 60%, 66%) 10px 10px 10px -12px;
+}
+
+.download-button {
+    width: 23.2rem;
+}
+
+.chrome-hero {
+    padding-bottom: 3rem;
+}
+
+.browser-heading {
+    margin-bottom: -0.5rem;
+}
+
+.logo-chrome {
+    position: relative;
+    background-image: url('images/logo-chrome.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* I don't understand how to increase the width of the img without interfering 
+    with the layout (margin, padding) of the html doc. */
+    height: 10rem;
+    margin: 2rem 0rem 2.8rem 0rem;
+}
+
+.firefox-hero {
+    padding-bottom: 3rem;
+}
+
+.logo-firefox {
+    position: relative;
+    background-image: url('images/logo-firefox.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* I don't understand how to increase the width of the img without interfering 
+    with the layout (margin, padding) of the html doc. */
+    height: 10rem;
+    margin: 2rem 0rem 2.8rem 0rem;
+}
+
+.opera-hero {
+    padding-bottom: 3rem;
+}
+
+.logo-opera {
+    position: relative;
+    background-image: url('images/logo-opera.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* I don't understand how to increase the width of the img without interfering 
+    with the layout (margin, padding) of the html doc. */
+    height: 10rem;
+    margin: 2rem 0rem 2.8rem 0rem;
+}
+
+.hr-download {
+    border-top: 3px dotted rgba(73, 93, 207, 0.2);
+    width: 100%;
+    padding-top: 2.4rem;
+    border-left: none;
+    border-right: none;
+}
+
+
+// FAQs
 
 
 
@@ -306,6 +405,7 @@ button {
       text-align: center;
       -webkit-transition: 0.3s;
       transition: 0.3s;
+      z-index: 1;
       &.active {
         left: 0
       }
