@@ -11,7 +11,7 @@ $primary-soft-red: hsl(0, 94%, 66%);
 
 /* Neutral */
 $neutral-grayish-blue: hsl(229, 8%, 60%);
-$neutral-very-dark-blue: hsl(229, 31%, 21%); 
+$neutral-very-dark-blue: hsl(229, 31%, 21%);
 
 
 * {
@@ -51,7 +51,7 @@ $neutral-very-dark-blue: hsl(229, 31%, 21%);
       --faq-list: 1.8rem; */
   }
 
-//   Headings & Paragraphs
+// Headings & Paragraphs
 h1 {
     font-size: var(--heading);
     color: $neutral-very-dark-blue;
@@ -259,6 +259,9 @@ button {
     .hr-features {
         border-top: 1px solid rgba(73, 93, 207, 0.2);
         width: 100%;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
     }
 }
 
@@ -380,8 +383,16 @@ button {
 
 
 // FAQs
+.faq-container-main {
+    margin-bottom: 12rem;
+}
+
+.faq-hero {
+    margin-bottom: 6rem;
+}
+
 .faq-container {
-    margin: 3rem auto;
+    margin: 5rem auto;
 }
 
 .faq-container-child {
@@ -402,13 +413,25 @@ button {
     border: solid $primary-soft-blue;
     border-width: 0 3px 3px 0;
     display: inline-block;
-    padding: 3px;
+    padding: 4.5px;
     transform: rotate(45deg);
     background: none;
-    height: 0.8rem;
-    width: 1.6rem;
     cursor: pointer;
 }
+
+.hr-faq {
+    border-top: 1px solid rgba(73, 93, 207, 0.2);
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+// Signup Form Section
+.signup-form-container {
+    background-color: $primary-soft-blue;
+}
+
 
 
   /* MEDIA QUERIES */
