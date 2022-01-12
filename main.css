@@ -384,6 +384,43 @@ nav .nav-ul li a {
   border-right: none;
 }
 
+.faq-container {
+  margin: 3rem auto;
+}
+
+.faq-container-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.paragraph-faq {
+  font-size: var(--main-2);
+  font-weight: 400;
+  color: #242A45;
+}
+
+.button-faq {
+  border: solid #5368df;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: none;
+  height: 0.8rem;
+  width: 1.6rem;
+  cursor: pointer;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 767px) {
   /* .nav-ul.show {
