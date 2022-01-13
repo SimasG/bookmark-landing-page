@@ -443,47 +443,51 @@ nav .nav-ul li a {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 767px) {
-  /* .nav-ul.show {
+/* .nav-ul.show {
           display: flex;
       } */
-  /* 1. Make the overlay as big as the whole screen 2. Style the menu 3. Change the logo colors */
-  .nav-ul {
-    position: fixed;
-    left: -100%;
-    top: 7rem;
-    gap: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #252b46;
-    opacity: 0.9;
-    width: 100%;
-    text-align: center;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    z-index: 1;
-  }
-  .nav-ul.active {
-    left: 0;
-  }
-  .nav-ul .nav-link {
-    margin: 1.6rem 0;
-  }
-  .hamburger {
-    display: block;
-  }
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    -webkit-transform: translateY(6px) rotate(45deg);
-    transform: translateY(6px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    -webkit-transform: translateY(-6px) rotate(-45deg);
-    transform: translateY(-6px) rotate(-45deg);
-  }
+/* 1. Make the overlay as big as the whole screen 2. Style the menu 3. Change the logo colors */
+.nav-ul {
+  position: fixed;
+  left: -100%;
+  top: 7rem;
+  gap: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #252b46;
+  opacity: 0.9;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.nav-ul.active {
+  left: 0;
+}
+
+.nav-ul .nav-link {
+  margin: 1.6rem 0;
+}
+
+.hamburger {
+  display: block;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  -webkit-transform: translateY(6px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+  transform: translateY(-6px) rotate(-45deg);
 }
 /*# sourceMappingURL=main.css.map */

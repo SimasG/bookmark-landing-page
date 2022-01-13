@@ -1,6 +1,6 @@
 const hamburger = document.querySelector(".hamburger");
 const navUl = document.querySelector(".nav-ul");
-// For later
+// For later maybe
 const featureList = document.querySelector(".feature-list");
 
 hamburger.addEventListener("click", () => {
