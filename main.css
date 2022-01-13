@@ -1,7 +1,4 @@
 /* GLOBAL STYLING & VARIABLES */
-/* Resetting margins & padding because different browsers use different margins & paddings */
-/* box-sizing: border-box is the most most intuitive way to create new elements. 
-Reason: the borders & padding is calculated into the total width of the element - makes it easier to track element shapes. */
 /* Neutral */
 * {
   padding: 0;
@@ -10,8 +7,6 @@ Reason: the borders & padding is calculated into the total width of the element 
   box-sizing: border-box;
 }
 
-/* Why is font-size 62.5%? Answer: Rems then become 16px * 62.5% = 10px
-  That makes it easier to work with rems (1rem = 10px).*/
 html {
   font-size: 62.5%;
   font-family: 'Rubik', sans-serif;
@@ -31,13 +26,13 @@ html {
   --text-2: 1.2rem;
   /* Font Size - Desktop (use later) */
   /* --heading: 4.8rem;
-      --heading-secondary: 3.2rem;
-      --heading-tertiary: 2rem;
-      --main-paragraph: 1.8rem;
-      --button-text: 1.4rem;
-      --list-text: 1.6rem;
-      --menu-text: 1.3rem;
-      --faq-list: 1.8rem; */
+    --heading-secondary: 3.2rem;
+    --heading-tertiary: 2rem;
+    --main-paragraph: 1.8rem;
+    --button-text: 1.4rem;
+    --list-text: 1.6rem;
+    --menu-text: 1.3rem;
+    --faq-list: 1.8rem; */
 }
 
 h1 {
@@ -69,10 +64,6 @@ p {
   font-weight: 400;
   opacity: 0.5;
   padding: 0.5rem;
-}
-
-.paragraph-faq {
-  opacity: 1;
 }
 
 button {
@@ -167,20 +158,20 @@ nav .nav-ul li a {
   display: relative;
 }
 
-.hero-illustration-1 {
-  position: relative;
+.hero .hero-illustration-1 {
   background-image: url("images/illustration-hero.svg");
+  position: relative;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   /* I don't understand how to increase the width of the img without interfering 
-    with the layout (margin, padding) of the html doc. */
+            with the layout (margin, padding) of the html doc. */
   height: 25rem;
   margin: 5rem -2.5rem 4.8rem -2.5rem;
   z-index: 0;
 }
 
-.hero-illustration-2 {
+.hero .hero-illustration-2 {
   position: relative;
   background: #5368df;
   height: 20.3rem;
@@ -267,19 +258,17 @@ nav .nav-ul li a {
   position: relative;
 }
 
-.illustration-bookmark-1 {
-  position: relative;
+.features-bookmark .illustration-bookmark-1 {
   background-image: url("images/illustration-features-tab-1.svg");
+  position: relative;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  /* I don't understand how to increase the width of the img without interfering 
-    with the layout (margin, padding) of the html doc. */
   height: 20.1rem;
   margin: 5rem -2.5rem 4.8rem -2.5rem;
 }
 
-.illustration-bookmark-2 {
+.features-bookmark .illustration-bookmark-2 {
   position: relative;
   background: #5368df;
   height: 20.3rem;
@@ -300,7 +289,7 @@ nav .nav-ul li a {
   margin: 9rem auto;
 }
 
-.download-extension-subcontainer {
+.download-extension-container .download-extension-subcontainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,65 +305,51 @@ nav .nav-ul li a {
           align-items: center;
 }
 
-.download-subcontainer-child {
+.download-extension-container .download-extension-subcontainer .download-subcontainer-child {
   margin: 2rem auto;
   padding: 2.4rem;
   -webkit-box-shadow: #7487dc 10px 10px 10px -12px;
           box-shadow: #7487dc 10px 10px 10px -12px;
 }
 
-.download-button {
+.download-extension-container .download-extension-subcontainer .download-subcontainer-child .download-button {
   width: 23.2rem;
 }
 
-.chrome-hero {
+.download-extension-container .download-extension-subcontainer .download-subcontainer-child .download-hero {
   padding-bottom: 3rem;
 }
 
-.browser-heading {
+.download-extension-container .download-extension-subcontainer .download-subcontainer-child .download-hero .browser-heading {
   margin-bottom: -0.5rem;
 }
 
 .logo-chrome {
-  position: relative;
   background-image: url("images/logo-chrome.svg");
+  position: relative;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  /* I don't understand how to increase the width of the img without interfering 
-    with the layout (margin, padding) of the html doc. */
   height: 10rem;
   margin: 2rem 0rem 2.8rem 0rem;
-}
-
-.firefox-hero {
-  padding-bottom: 3rem;
 }
 
 .logo-firefox {
-  position: relative;
   background-image: url("images/logo-firefox.svg");
+  position: relative;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  /* I don't understand how to increase the width of the img without interfering 
-    with the layout (margin, padding) of the html doc. */
   height: 10rem;
   margin: 2rem 0rem 2.8rem 0rem;
 }
 
-.opera-hero {
-  padding-bottom: 3rem;
-}
-
 .logo-opera {
-  position: relative;
   background-image: url("images/logo-opera.svg");
+  position: relative;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  /* I don't understand how to increase the width of the img without interfering 
-    with the layout (margin, padding) of the html doc. */
   height: 10rem;
   margin: 2rem 0rem 2.8rem 0rem;
 }
@@ -391,15 +366,15 @@ nav .nav-ul li a {
   margin-bottom: 12rem;
 }
 
-.faq-hero {
+.faq-container-main .faq-hero {
   margin-bottom: 6rem;
 }
 
-.faq-container {
+.faq-container-main .faq-container {
   margin: 5rem auto;
 }
 
-.faq-container-child {
+.faq-container-main .faq-container .faq-container-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,13 +388,13 @@ nav .nav-ul li a {
   margin-bottom: 1rem;
 }
 
-.paragraph-faq {
+.faq-container-main .faq-container .faq-container-child .paragraph-faq {
   font-size: var(--main-2);
   font-weight: 400;
   color: #242A45;
 }
 
-.button-faq {
+.faq-container-main .faq-container .faq-container-child .button-faq {
   border: solid #5368df;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -430,7 +405,11 @@ nav .nav-ul li a {
   cursor: pointer;
 }
 
-.hr-faq {
+.faq-container-main .faq-container .faq-container-child .paragraph-faq {
+  opacity: 1;
+}
+
+.faq-container-main .faq-container .hr-faq {
   border-top: 1px solid rgba(73, 93, 207, 0.2);
   width: 100%;
   border-left: none;
@@ -443,51 +422,43 @@ nav .nav-ul li a {
 }
 
 /* MEDIA QUERIES */
-/* .nav-ul.show {
-          display: flex;
-      } */
-/* 1. Make the overlay as big as the whole screen 2. Style the menu 3. Change the logo colors */
-.nav-ul {
-  position: fixed;
-  left: -100%;
-  top: 7rem;
-  gap: 0;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background-color: #252b46;
-  opacity: 0.9;
-  width: 100%;
-  text-align: center;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  z-index: 1;
-}
-
-.nav-ul.active {
-  left: 0;
-}
-
-.nav-ul .nav-link {
-  margin: 1.6rem 0;
-}
-
-.hamburger {
-  display: block;
-}
-
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-  -webkit-transform: translateY(6px) rotate(45deg);
-  transform: translateY(6px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-  -webkit-transform: translateY(-6px) rotate(-45deg);
-  transform: translateY(-6px) rotate(-45deg);
+@media (max-width: 767px) {
+  .nav-ul {
+    position: fixed;
+    left: -100%;
+    top: 7rem;
+    gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #252b46;
+    opacity: 0.9;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 1;
+  }
+  .nav-ul.active {
+    left: 0;
+  }
+  .nav-ul .nav-link {
+    margin: 1.6rem 0;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(6px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-6px) rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg);
+  }
 }
 /*# sourceMappingURL=main.css.map */
