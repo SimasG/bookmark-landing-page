@@ -1,6 +1,7 @@
 const hamburger = document.querySelector(".hamburger");
 const navUl = document.querySelector(".nav-ul-styling");
 const logo = document.querySelector(".logo")
+const socialMediaIcon = document.querySelector(".social-media-icon-container-header");
 
 // For later maybe
 const featureList = document.querySelector(".feature-list");
@@ -8,6 +9,7 @@ const featureList = document.querySelector(".feature-list");
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navUl.classList.toggle("active");
+    socialMediaIcon.classList.toggle("active");
 
     // Logo color toggle
     if (navUl.classList.contains("active")){

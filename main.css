@@ -118,20 +118,18 @@ nav .nav-ul {
   list-style-type: none;
 }
 
-nav .nav-ul li a {
-  display: inline-block;
-  color: black;
-  padding: 1rem 2rem;
-  text-decoration: none;
-}
-
-.nav-link {
+nav .nav-ul .nav-link {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
-.nav-link:hover {
-  color: #fa5757;
+nav .nav-ul li a {
+  display: inline-block;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.231rem;
 }
 
 .hamburger {
@@ -154,6 +152,32 @@ nav .nav-ul li a {
   transition: all 0.3s ease-in-out;
   /* Don't understand why it's background-color and not just color. */
   background-color: #252b46;
+}
+
+.hr-nav {
+  border-top: 1px solid rgba(151, 151, 151, 0.2);
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.social-media-icon-container-header {
+  display: none;
+}
+
+.social-media-icon-container-header.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 8.8rem;
+  margin-top: 42rem;
 }
 
 /* Hero Section */
@@ -247,6 +271,12 @@ nav .nav-ul li a {
   padding: 1.95rem 0;
   font-weight: 400;
   opacity: 0.7;
+}
+
+.feature-list .border-active {
+  background-color: #fa5757;
+  width: 14.3rem;
+  height: 0.4rem;
 }
 
 .feature-list .hr-features {
@@ -612,6 +642,7 @@ footer .social-media-icon-container {
             align-items: center;
     z-index: 1;
     display: none;
+    padding: 3.3rem;
   }
   .nav-ul-styling.active {
     display: -webkit-box;
@@ -619,8 +650,9 @@ footer .social-media-icon-container {
     display: flex;
   }
   .nav-ul {
+    z-index: 2;
     position: fixed;
-    top: 7rem;
+    top: 11rem;
     gap: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -628,14 +660,22 @@ footer .social-media-icon-container {
     flex-direction: column;
     background-color: #252b46;
     opacity: 0.9;
-    width: 100%;
+    width: 30.9rem;
     text-align: center;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     z-index: 1;
   }
   .nav-ul .nav-link {
-    margin: 1.6rem 0;
+    margin: 1.1rem 0;
+    font-size: var(--heading-tertiary);
+  }
+  .nav-ul #nav-link-login {
+    margin-top: 2rem;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    width: 30.8rem;
+    font-weight: 500;
   }
   .hamburger {
     display: block;
@@ -647,12 +687,12 @@ footer .social-media-icon-container {
   .hamburger.active .bar:nth-child(1) {
     -webkit-transform: translateY(6px) rotate(45deg);
     transform: translateY(6px) rotate(45deg);
-    color: white;
+    background: white;
   }
   .hamburger.active .bar:nth-child(3) {
     -webkit-transform: translateY(-6px) rotate(-45deg);
     transform: translateY(-6px) rotate(-45deg);
-    color: white;
+    background: white;
   }
 }
 /*# sourceMappingURL=main.css.map */
