@@ -1,0 +1,36 @@
+// Footer
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $neutral-very-dark-blue;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    .logo-footer {
+        width: 14.774rem;
+        margin-bottom: 4rem;
+    }
+    .nav-ul-footer {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;  
+        height: 11.5rem;  
+        .nav-link-footer {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-size: var(--paragraph-regular);
+            letter-spacing: 1.73px;
+            margin-top: 10rem;
+        }
+    }
+    .social-media-icon-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 8.8rem;
+        margin-top: 4.8rem;
+    }
+}

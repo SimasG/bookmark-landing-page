@@ -1,0 +1,55 @@
+// Features Section
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 3.5rem auto;
+    .feature-link {
+        display: inline-block;
+        text-decoration: none;
+        font-size: var(--list-text);
+        color: $neutral-very-dark-blue;
+        padding: 1.95rem 0;
+        font-weight: 400;
+        opacity: 0.7;
+        // border-bottom: 1px solid rgba(73, 93, 207, 0.2);
+    }
+    .hr-features {
+        border-top: 1px solid rgba(73, 93, 207, 0.2);
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
+}
+
+.features-bookmark {
+    position: relative;
+    .illustration-bookmark-1 {
+        background-image: url('images/illustration-features-tab-1.svg');
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 20.1rem;
+        margin: 5rem -2.5rem 4.8rem -2.5rem;
+    }
+    .illustration-bookmark-2 {
+        position: relative;
+        background: $primary-soft-blue;
+        height: 20.3rem;
+        width: 55.7rem;
+        margin: -21.4rem 0 3.5rem 0;
+        right: 90%;
+        z-index: -2;
+        border-radius: 316.5px;
+    }
+}
+
+.more-info-button {
+    margin: 1rem auto;
+    display: block;
+    width: 11.4rem;
+}

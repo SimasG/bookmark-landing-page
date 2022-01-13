@@ -1,0 +1,41 @@
+// FAQs
+.faq-container-main {
+    margin-bottom: 12rem;
+    .faq-hero {
+        margin-bottom: 6rem;
+    }
+    .faq-container {
+        margin: 5rem auto;
+        .faq-container-child {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            .paragraph-faq {
+                font-size: var(--main-2);
+                font-weight: 400;
+                color: #242A45;
+            }
+            .button-faq {
+                border: solid $primary-soft-blue;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 4.5px;
+                transform: rotate(45deg);
+                background: none;
+                cursor: pointer;
+            }
+            .paragraph-faq {
+                opacity: 1;
+            }
+        }
+        .hr-faq {
+            border-top: 1px solid rgba(73, 93, 207, 0.2);
+            width: 100%;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+        }
+    }
+}

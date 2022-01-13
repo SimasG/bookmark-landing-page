@@ -1,0 +1,54 @@
+  /* Hero Section */
+  .hero {
+    display: relative;
+    .hero-illustration-1 {
+        background-image: url('images/illustration-hero.svg');
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* I don't understand how to increase the width of the img without interfering 
+        with the layout (margin, padding) of the html doc. */
+        height: 25rem;
+        margin: 5rem -2.5rem 4.8rem -2.5rem;
+        z-index: 0;
+    }
+    .hero-illustration-2 {
+        position: relative;
+        background: $primary-soft-blue;
+        height: 20.3rem;
+        width: 77.7rem;
+        margin: -24rem 0 5rem 0;
+        left: 13%;
+        z-index: -1;
+        border-radius: 316.5px;
+    }
+}
+
+
+.hero-buttons {
+display: flex;
+justify-content: center;
+align-items: center;
+// top right bottom left
+margin: 2rem 0 14rem 0;
+.hero-button-chrome {
+    margin-right: 0.7rem;
+    border-radius: 0.5rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    box-shadow: hsl(229, 60%, 66%) 0px 10px 10px -12px;
+    width: 15.1rem;
+}
+.hero-button-firefox {
+    margin-left: 0.7rem;
+    border-radius: 0.5rem;
+    width: 15.1rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: $neutral-very-dark-blue;
+    opacity: 0.8;
+    background-color: #F7F7F7;
+    box-shadow: hsl(229, 60%, 66%) 0px 10px 10px -12px;
+}
+}

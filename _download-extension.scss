@@ -1,0 +1,59 @@
+// Download Extension Section
+.download-extension-container {
+    margin: 9rem auto;
+    .download-extension-subcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .download-subcontainer-child {
+            margin: 2rem auto;
+            padding: 2.4rem;
+            box-shadow: hsl(229, 60%, 66%) 10px 10px 10px -12px;
+            .download-button {
+                width: 23.2rem;
+            }
+            .download-hero {
+                padding-bottom: 3rem;
+                .browser-heading {
+                    margin-bottom: -0.5rem;
+                }
+            }
+        }
+    }
+}
+
+.logo-chrome {
+    background-image: url('images/logo-chrome.svg');
+    @include illustrationMain();
+}
+
+.logo-firefox {
+    background-image: url('images/logo-firefox.svg');
+    @include illustrationMain();
+}
+
+.logo-opera {
+    background-image: url('images/logo-opera.svg');
+    @include illustrationMain();
+}
+
+// .hr-download {
+//     border-top: 3px dotted rgba(73, 93, 207, 0.2);
+//     width: 100%;
+//     padding-top: 2.4rem;
+//     border-left: none;
+//     border-right: none;
+// }
+
+.bg-dots {
+    background-image: url('images/bg-dots.svg');
+    position: relative;
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 2.4rem;
+
+}
