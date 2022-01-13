@@ -150,11 +150,10 @@ nav .nav-ul li a {
   width: 1.8rem;
   height: 0.3rem;
   margin: 0.3rem auto;
-  /* 0.5rem -> top and bottom | auto -> left & right */
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   /* Don't understand why it's background-color and not just color. */
-  background-color: black;
+  background-color: #252b46;
 }
 
 /* Hero Section */
@@ -169,7 +168,7 @@ nav .nav-ul li a {
   background-repeat: no-repeat;
   background-position: center;
   /* I don't understand how to increase the width of the img without interfering 
-            with the layout (margin, padding) of the html doc. */
+        with the layout (margin, padding) of the html doc. */
   height: 25rem;
   margin: 5rem -2.5rem 4.8rem -2.5rem;
   z-index: 0;
@@ -587,6 +586,9 @@ footer .social-media-icon-container {
 
 /* MEDIA QUERIES */
 @media (max-width: 767px) {
+  .logo {
+    z-index: 2;
+  }
   .nav-ul-styling {
     position: fixed;
     top: 0;
@@ -615,9 +617,6 @@ footer .social-media-icon-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .logo {
-    z-index: 2;
   }
   .nav-ul {
     position: fixed;
@@ -648,10 +647,12 @@ footer .social-media-icon-container {
   .hamburger.active .bar:nth-child(1) {
     -webkit-transform: translateY(6px) rotate(45deg);
     transform: translateY(6px) rotate(45deg);
+    color: white;
   }
   .hamburger.active .bar:nth-child(3) {
     -webkit-transform: translateY(-6px) rotate(-45deg);
     transform: translateY(-6px) rotate(-45deg);
+    color: white;
   }
 }
 /*# sourceMappingURL=main.css.map */
