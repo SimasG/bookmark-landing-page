@@ -1,5 +1,5 @@
 const hamburger = document.querySelector(".hamburger");
-const navUl = document.querySelector(".nav-ul");
+const navUl = document.querySelector(".nav-ul-styling");
 // For later maybe
 const featureList = document.querySelector(".feature-list");
 
