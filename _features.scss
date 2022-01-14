@@ -14,7 +14,15 @@
         padding: 1.95rem 0;
         font-weight: 400;
         opacity: 0.7;
+        cursor: pointer;
         // border-bottom: 1px solid rgba(73, 93, 207, 0.2);
+    }
+    .feature-link:hover {
+        color: $primary-soft-red;
+    }
+    .feature-link.active {
+        // background-color: yellow;
+        color: $primary-soft-red;
     }
     .border-active {
         background-color: $primary-soft-red;
@@ -53,8 +61,65 @@
     }
 }
 
+.features-searching {
+    position: relative;
+    .illustration-searching-1 {
+        background-image: url('images/illustration-features-tab-2.svg');
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 20.1rem;
+        margin: 5rem -9rem 4.8rem -2.5rem;
+    }
+    .illustration-searching-2 {
+        position: relative;
+        background: $primary-soft-blue;
+        height: 20.3rem;
+        width: 55.7rem;
+        margin: -21.4rem 0 3.5rem 0;
+        right: 90%;
+        z-index: -2;
+        border-radius: 316.5px;
+    }
+}
+
+.features-sharing {
+    position: relative;
+    .illustration-sharing-1 {
+        background-image: url('images/illustration-features-tab-3.svg');
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 20.1rem;
+        // margin: 5rem 0 4.8rem 0;
+        margin: 5rem -2.5rem 4.8rem 2.5rem;
+    }
+    .illustration-sharing-2 {
+        position: relative;
+        background: $primary-soft-blue;
+        height: 20.3rem;
+        width: 55.7rem;
+        margin: -21.4rem 0 3.5rem 0;
+        right: 90%;
+        z-index: -2;
+        border-radius: 316.5px;
+    }
+}
+
+
 .more-info-button {
     margin: 1rem auto;
     display: block;
     width: 11.4rem;
+}
+
+// Tab Functionality
+[data-tab-content] {
+    display: none;
+}
+
+[data-tab-content].active {
+    display: block;
 }

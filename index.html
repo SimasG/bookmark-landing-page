@@ -91,24 +91,25 @@
           Your bookmarks sync between your devices so you can access them on the go.        
         </p>
       </div>
+
       <div class="features">
         <!-- Features Tabs -->
         <ul class="feature-list">
           <hr class="hr-features">
-          <li data-tab-target="#bookmark"><a href="#bookmarking" class="feature-link">Simple Bookmarking</a></li>
-          <div class="border-active"></div>
+          <li data-tab-target="#bookmark" class="feature-link active">Simple Bookmarking</li>
+          <div data-tab-underline class="border-active active"></div>
           <hr class="hr-features">
-          <li data-tab-target="#searching"><a href="#searching" class="feature-link">Speedy Searching</a></li>
+          <li data-tab-target="#searching" class="feature-link">Speedy Searching</li>
           <hr class="hr-features">
-          <div class="border-active-searching"></div>
-          <li data-tab-target="#sharing"><a href="#sharing" class="feature-link">Easy Sharing</a></li>
+          <div data-tab-underline class="border-active"></div>
+          <li data-tab-target="#sharing" class="feature-link">Easy Sharing</li>
           <hr class="hr-features">
-          <div class="border-active-sharing"></div>
+          <div data-tab-underline class="border-active"></div>
         </ul>
       </div>
 
       <div class="features-container">
-        <div class="features-bookmark" id="bookmark">
+        <div class="features-bookmark active" id="bookmark" data-tab-content> 
           <div class="illustration-bookmark-1"></div>
           <div class="illustration-bookmark-2"></div>
           <div class="features-bookmark-hero">
@@ -125,7 +126,9 @@
           </button>
         </div>
   
-        <div class="features-searching" id="searching">
+        <div class="features-searching" id="searching" data-tab-content>
+          <div class="illustration-searching-1"></div>
+          <div class="illustration-searching-2"></div>
           <div class="features-searching-hero">
             <h2 class="h2-heading heading-searching">
               Intelligent search
@@ -140,7 +143,9 @@
           </button>
         </div>
   
-        <div class="features-sharing" id="sharing">
+        <div class="features-sharing" id="sharing" data-tab-content>
+          <div class="illustration-sharing-1"></div>
+          <div class="illustration-sharing-2"></div>
           <div class="features-sharing-hero">
             <h2 class="h2-heading heading-sharing">
               Share your bookmarks
