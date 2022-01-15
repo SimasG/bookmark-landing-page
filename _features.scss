@@ -24,11 +24,11 @@
         // background-color: yellow;
         color: $primary-soft-red;
     }
-    .border-active {
-        background-color: $primary-soft-red;
-        width: 14.3rem;
-        height: 0.4rem;
-    }
+    // .border-active.active {
+    //     background-color: $primary-soft-red;
+    //     width: 14.3rem;
+    //     height: 0.4rem;
+    // }
     .hr-features {
         border-top: 1px solid rgba(73, 93, 207, 0.2);
         width: 100%;
@@ -36,6 +36,20 @@
         border-right: none;
         border-bottom: none;
     }
+}
+
+.feature-border {
+    background-color: $primary-soft-red;
+    width: 14.3rem;
+    height: 0.4rem;   
+}
+
+[data-tab-underline-child] {
+    display: none;
+}
+
+[data-tab-underline-child].active {
+    display: block;
 }
 
 .features-bookmark {

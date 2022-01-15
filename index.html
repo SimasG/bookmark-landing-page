@@ -96,15 +96,15 @@
         <!-- Features Tabs -->
         <ul class="feature-list">
           <hr class="hr-features">
-          <li data-tab-target="#bookmark" class="feature-link active">Simple Bookmarking</li>
-          <div data-tab-underline class="border-active active"></div>
+          <li data-tab-target="#bookmark" data-tab-underline="#bookmark-border" class="feature-link active">Simple Bookmarking</li>
+          <div class="feature-border border-bookmark active" id="bookmark-border" data-tab-underline-child></div>
           <hr class="hr-features">
-          <li data-tab-target="#searching" class="feature-link">Speedy Searching</li>
+          <li data-tab-target="#searching" data-tab-underline="#searching-border" class="feature-link">Speedy Searching</li>
           <hr class="hr-features">
-          <div data-tab-underline class="border-active"></div>
-          <li data-tab-target="#sharing" class="feature-link">Easy Sharing</li>
+          <div class="feature-border border-searching" id="searching-border" data-tab-underline-child></div>
+          <li data-tab-target="#sharing" data-tab-underline="#sharing-border" class="feature-link">Easy Sharing</li>
           <hr class="hr-features">
-          <div data-tab-underline class="border-active"></div>
+          <div class="feature-border border-sharing" id="sharing-border" data-tab-underline-child></div>
         </ul>
       </div>
 
