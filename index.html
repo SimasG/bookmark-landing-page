@@ -324,9 +324,11 @@
         Stay up-to-date with what we’re doing
       </h2>
     </div>
-    <form action="#" class="form" name="signup-form">
-      <div>
-        <input type="email" id="email" name="email" placeholder="Enter your email address" class="form-input-email">
+    <form id="form" action="#" name="signup-form">
+      <div class="input-box">
+        <input type="text" id="email" name="" placeholder="Enter your email address" 
+        onkeydown="validation()" class="form-input-email">
+        <span id="text"></span>
       </div>
       <div>
         <!-- I don't know how to style the "Contact Us" value in the form -->

@@ -670,7 +670,7 @@ nav .nav-ul li a {
   padding: 0;
 }
 
-.signup-form-container .form {
+.signup-form-container form {
   height: 13.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -690,7 +690,7 @@ nav .nav-ul li a {
   margin-bottom: 2rem;
 }
 
-.signup-form-container .form .form-input-email {
+.signup-form-container form .form-input-email {
   height: 4.8rem;
   width: 31.1rem;
   border-radius: 0.5rem;
@@ -699,39 +699,39 @@ nav .nav-ul li a {
   color: #242A45;
 }
 
-.signup-form-container .form ::-webkit-input-placeholder {
+.signup-form-container form ::-webkit-input-placeholder {
   padding: 2.1rem;
-  opacity: 0.5;
+  opacity: 0.3;
   line-height: 2.8rem;
   letter-spacing: 0.25px;
   font-size: 14px;
 }
 
-.signup-form-container .form :-ms-input-placeholder {
+.signup-form-container form :-ms-input-placeholder {
   padding: 2.1rem;
-  opacity: 0.5;
+  opacity: 0.3;
   line-height: 2.8rem;
   letter-spacing: 0.25px;
   font-size: 14px;
 }
 
-.signup-form-container .form ::-ms-input-placeholder {
+.signup-form-container form ::-ms-input-placeholder {
   padding: 2.1rem;
-  opacity: 0.5;
+  opacity: 0.3;
   line-height: 2.8rem;
   letter-spacing: 0.25px;
   font-size: 14px;
 }
 
-.signup-form-container .form ::placeholder {
+.signup-form-container form ::placeholder {
   padding: 2.1rem;
-  opacity: 0.5;
+  opacity: 0.3;
   line-height: 2.8rem;
   letter-spacing: 0.25px;
   font-size: 14px;
 }
 
-.signup-form-container .form .contact-us-button {
+.signup-form-container form .contact-us-button {
   height: 4.8rem;
   width: 31.1rem;
   border-radius: 0.5rem;
