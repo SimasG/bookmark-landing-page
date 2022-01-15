@@ -374,10 +374,6 @@ nav .nav-ul li a {
   color: #fa5757;
 }
 
-.feature-list .feature-link.active {
-  color: #fa5757;
-}
-
 .feature-list .hr-features {
   border-top: 1px solid rgba(73, 93, 207, 0.2);
   width: 100%;
@@ -593,6 +589,7 @@ nav .nav-ul li a {
           align-items: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 .faq-container-main .faq-container .faq-container-child .paragraph-faq {
@@ -608,8 +605,21 @@ nav .nav-ul li a {
   padding: 4.5px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
   background: none;
   cursor: pointer;
+}
+
+.faq-container-main .faq-container .faq-container-child .button-faq.active {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
 .faq-container-main .faq-container .faq-container-child .paragraph-faq {
@@ -622,6 +632,14 @@ nav .nav-ul li a {
   border-left: none;
   border-right: none;
   border-bottom: none;
+}
+
+[data-faq-content] {
+  display: none;
+}
+
+.active[data-faq-content] {
+  display: block;
 }
 
 .signup-form-container {

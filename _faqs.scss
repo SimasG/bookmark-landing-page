@@ -12,6 +12,7 @@
             align-items: center;
             margin-top: 1rem;
             margin-bottom: 1rem;
+            cursor: pointer;
             .paragraph-faq {
                 font-size: var(--main-2);
                 font-weight: 400;
@@ -23,8 +24,13 @@
                 display: inline-block;
                 padding: 4.5px;
                 transform: rotate(45deg);
+                transition: transform 0.3s linear;
                 background: none;
                 cursor: pointer;
+            }
+            .button-faq.active {
+                transform: rotate(225deg);
+                transition: transform 0.3s linear;
             }
             .paragraph-faq {
                 opacity: 1;
@@ -38,4 +44,12 @@
             border-bottom: none;
         }
     }
+}
+
+[data-faq-content] {
+    display: none;
+}
+
+.active[data-faq-content] {
+    display: block;
 }
