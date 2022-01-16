@@ -697,10 +697,11 @@ nav .nav-ul li a {
   border: none;
   background-color: white;
   color: #242A45;
+  outline: none;
+  padding: 2.1rem;
 }
 
 .signup-form-container form ::-webkit-input-placeholder {
-  padding: 2.1rem;
   opacity: 0.3;
   line-height: 2.8rem;
   letter-spacing: 0.25px;
@@ -708,7 +709,6 @@ nav .nav-ul li a {
 }
 
 .signup-form-container form :-ms-input-placeholder {
-  padding: 2.1rem;
   opacity: 0.3;
   line-height: 2.8rem;
   letter-spacing: 0.25px;
@@ -716,7 +716,6 @@ nav .nav-ul li a {
 }
 
 .signup-form-container form ::-ms-input-placeholder {
-  padding: 2.1rem;
   opacity: 0.3;
   line-height: 2.8rem;
   letter-spacing: 0.25px;
@@ -724,7 +723,6 @@ nav .nav-ul li a {
 }
 
 .signup-form-container form ::placeholder {
-  padding: 2.1rem;
   opacity: 0.3;
   line-height: 2.8rem;
   letter-spacing: 0.25px;
@@ -739,6 +737,66 @@ nav .nav-ul li a {
   background-color: #fa5757;
   color: white;
   cursor: pointer;
+}
+
+.signup-form-container form input[type="text"] {
+  font-size: var(--button-text);
+  letter-spacing: 0.25px;
+}
+
+#form .input-box {
+  position: relative;
+}
+
+#form.invalid .form-input-email {
+  border: 2px solid #fa5757;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#form.invalid .input-box:before {
+  content: '';
+  position: absolute;
+  right: 1.6rem;
+  top: 1.6rem;
+  width: 2rem;
+  height: 2rem;
+  background: url("images/icon-error.svg");
+  background-size: cover;
+  z-index: 4;
+}
+
+#form.valid .input-box:before {
+  content: '';
+  position: absolute;
+  right: 1.6rem;
+  top: 1.6rem;
+  width: 2rem;
+  height: 2rem;
+  background: url("images/valid.png");
+  background-size: cover;
+  z-index: 4;
+}
+
+#form.invalid #text {
+  display: block;
+  font-weight: 500;
+  background-color: #fa5757;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 1.3rem;
+}
+
+#form.valid #text {
+  display: block;
+  font-weight: 500;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 1.3rem;
 }
 
 footer {

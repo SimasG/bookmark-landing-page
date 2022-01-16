@@ -39,9 +39,10 @@
             border: none;
             background-color: white;
             color: #242A45;
+            outline: none;
+            padding: 2.1rem;
         }
         ::placeholder {
-            padding: 2.1rem;
             opacity: 0.3;
             line-height: 2.8rem;
             letter-spacing: 0.25px;
@@ -56,9 +57,73 @@
             color: white;
             cursor: pointer;
         }
+        // #text {
+        //     display: block;
+        //     color: white;
+        //     font-weight: 500;
+        //     background-color: $primary-soft-red;
+        //     border-bottom-left-radius: 0.5rem;
+        //     border-bottom-right-radius: 0.5rem;
+        // }
+        input[type="text"] {
+            font-size: var(--button-text);
+            letter-spacing: 0.25px;
+        }
     }
 }
 
-// #form .input-box {
-//     position: relative;
-// }
+#form .input-box {
+    position: relative;
+}
+
+#form.invalid .form-input-email {
+    border: 2px solid $primary-soft-red;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+// Don't understand the positioning of the correct/incorrect icons
+#form.invalid .input-box:before {
+    content: '';
+    position: absolute;
+    right: 1.6rem;
+    top: 1.6rem;
+    width: 2rem;
+    height: 2rem;
+    background: url('images/icon-error.svg');
+    background-size: cover;
+    z-index: 4;
+}
+
+#form.valid .input-box:before {
+    content: '';
+    position: absolute;
+    right: 1.6rem;
+    top: 1.6rem;
+    width: 2rem;
+    height: 2rem;
+    background: url('images/valid.png');
+    background-size: cover;
+    z-index: 4;
+}
+
+#form.invalid #text {
+    display: block;
+    font-weight: 500;
+    background-color: $primary-soft-red;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 1.3rem;
+}
+
+#form.valid #text {
+    display: block;
+    font-weight: 500;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 1.3rem;
+}
