@@ -17,6 +17,9 @@
                 font-size: var(--main-2);
                 font-weight: 400;
                 color: #242A45;
+                &:hover {
+                    color: $primary-soft-red;
+                }
             }
             .button-faq {
                 border: solid $primary-soft-blue;

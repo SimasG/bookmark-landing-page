@@ -328,6 +328,14 @@ nav .nav-ul li a {
   width: 15.1rem;
 }
 
+.hero-buttons .hero-button-chrome:hover {
+  color: #5368df;
+  background: white;
+  border: 2px solid #5368df;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
 .hero-buttons .hero-button-firefox {
   margin-left: 0.7rem;
   border-radius: 0.5rem;
@@ -339,6 +347,13 @@ nav .nav-ul li a {
   background-color: #F7F7F7;
   -webkit-box-shadow: #7487dc 0px 10px 10px -12px;
           box-shadow: #7487dc 0px 10px 10px -12px;
+}
+
+.hero-buttons .hero-button-firefox:hover {
+  background: white;
+  border: 2px solid #252b46;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
 
 .feature-list {
@@ -477,6 +492,14 @@ nav .nav-ul li a {
   width: 11.4rem;
 }
 
+.more-info-button:hover {
+  color: #5368df;
+  background: white;
+  border: 2px solid #5368df;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
 [data-tab-content] {
   display: none;
 }
@@ -514,6 +537,14 @@ nav .nav-ul li a {
 
 .download-extension-container .download-extension-subcontainer .download-subcontainer-child .download-button {
   width: 23.2rem;
+}
+
+.download-extension-container .download-extension-subcontainer .download-subcontainer-child .download-button:hover {
+  color: #5368df;
+  background: white;
+  border: 2px solid #5368df;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
 
 .download-extension-container .download-extension-subcontainer .download-subcontainer-child .download-hero {
@@ -596,6 +627,10 @@ nav .nav-ul li a {
   font-size: var(--main-2);
   font-weight: 400;
   color: #242A45;
+}
+
+.faq-container-main .faq-container .faq-container-child .paragraph-faq:hover {
+  color: #fa5757;
 }
 
 .faq-container-main .faq-container .faq-container-child .button-faq {
@@ -739,6 +774,14 @@ nav .nav-ul li a {
   cursor: pointer;
 }
 
+.signup-form-container form .contact-us-button:hover {
+  color: #fa5757;
+  background: white;
+  border: 2px solid #fa5757;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
 .signup-form-container form input[type="text"] {
   font-size: var(--button-text);
   letter-spacing: 0.25px;
@@ -849,6 +892,10 @@ footer .nav-ul-footer .nav-link-footer {
   margin-top: 10rem;
 }
 
+footer .nav-ul-footer .nav-link-footer:hover {
+  color: #fa5757;
+}
+
 footer .social-media-icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -861,5 +908,13 @@ footer .social-media-icon-container {
           align-items: center;
   width: 8.8rem;
   margin-top: 4.8rem;
+}
+
+footer .social-media-icon-container .social-media-icon-footer {
+  cursor: pointer;
+}
+
+svg:hover path {
+  fill: #fa5757;
 }
 /*# sourceMappingURL=main.css.map */

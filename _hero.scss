@@ -27,28 +27,39 @@
 
 
 .hero-buttons {
-display: flex;
-justify-content: center;
-align-items: center;
-// top right bottom left
-margin: 2rem 0 14rem 0;
-.hero-button-chrome {
-    margin-right: 0.7rem;
-    border-radius: 0.5rem;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    box-shadow: hsl(229, 60%, 66%) 0px 10px 10px -12px;
-    width: 15.1rem;
-}
-.hero-button-firefox {
-    margin-left: 0.7rem;
-    border-radius: 0.5rem;
-    width: 15.1rem;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    color: $neutral-very-dark-blue;
-    opacity: 0.8;
-    background-color: #F7F7F7;
-    box-shadow: hsl(229, 60%, 66%) 0px 10px 10px -12px;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // top right bottom left
+    margin: 2rem 0 14rem 0;
+    .hero-button-chrome {
+        margin-right: 0.7rem;
+        border-radius: 0.5rem;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        box-shadow: hsl(229, 60%, 66%) 0px 10px 10px -12px;
+        width: 15.1rem;
+        &:hover {
+            color: $primary-soft-blue;
+            background: white;
+            border: 2px solid $primary-soft-blue;
+            transition-duration: 0.1s;         
+        }
+    }
+    .hero-button-firefox {
+        margin-left: 0.7rem;
+        border-radius: 0.5rem;
+        width: 15.1rem;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        color: $neutral-very-dark-blue;
+        opacity: 0.8;
+        background-color: #F7F7F7;
+        box-shadow: hsl(229, 60%, 66%) 0px 10px 10px -12px;
+        &:hover {
+            background: white;
+            border: 2px solid $neutral-very-dark-blue;
+            transition-duration: 0.1s;         
+        }
+    }
 }

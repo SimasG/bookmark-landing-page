@@ -12,6 +12,12 @@
             box-shadow: hsl(229, 60%, 66%) 10px 10px 10px -12px;
             .download-button {
                 width: 23.2rem;
+                &:hover {
+                    color: $primary-soft-blue;
+                    background: white;
+                    border: 2px solid $primary-soft-blue;
+                    transition-duration: 0.1s;         
+                }
             }
             .download-hero {
                 padding-bottom: 3rem;

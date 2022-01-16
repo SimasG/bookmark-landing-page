@@ -105,3 +105,24 @@ function validation() {
         text.style.color = "#00ff00";
     }
 }
+
+
+// Footer Social Media Icon Hover
+// const socialMediaIconFooterTwitter = document.getElementById("social-media-icon-footer-twitter");
+
+// socialMediaIconFooterTwitter.addEventListener("mouseover", mouseOver);
+// socialMediaIconFooterTwitter.addEventListener("mouseout", mouseOut);
+
+
+
+
+
+// socialMediaIconFooterTwitter.addEventListener("mouseover", () => {
+//     socialMediaIconFooterTwitter.classList.toggle("active");
+
+//     if (socialMediaIconFooterTwitter.classList.contains("active")){
+//         logo.src = "images/icon-twitter-hover.svg";
+//     }else{
+//         logo.src = "images/icon-twitter.svg";
+//     }
+// });
