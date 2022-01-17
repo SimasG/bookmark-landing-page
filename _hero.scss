@@ -1,4 +1,4 @@
-  /* Hero Section */
+    /* Hero Section */
   .hero {
     display: relative;
     .hero-illustration-1 {
@@ -62,4 +62,50 @@
             transition-duration: 0.1s;         
         }
     }
+}
+
+@media (min-width: 767px) {
+    .hero {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        .hero-text {
+            padding: 0;
+            margin: 0;
+            margin-top: 14rem;
+            width: 54rem;
+            height: 29.2rem;
+            .hero-heading {
+                font-size: var(--heading-primary-desktop);
+                text-align: left;
+                padding: 0;
+            }
+            .hero-paragraph {
+                font-size: var(--main-paragraph);
+                text-align: left;
+                padding: 0;
+            }
+            .hero-buttons {
+                justify-content: left;
+            }
+        }
+        .hero-illustration-main {
+            margin-right: -68rem;
+            margin-top: 7rem;
+            .hero-illustration-1 {
+                width: 65rem;
+                height: 45rem;
+                margin-bottom: -1rem;
+            }
+            .hero-illustration-2 {
+                margin: 0;
+                width: 120rem;
+                height: 35.2rem;
+                border-radius: 316.5px;
+                margin-top: -32rem;
+            }
+        }
+    }
+
 }

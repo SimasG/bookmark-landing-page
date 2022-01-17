@@ -30,14 +30,8 @@ body {
   --text-2: 1.2rem;
   /* Font Size - Desktop (use later) */
   --menu-text: 1.3rem;
-  /* --heading: 4.8rem;
-    --heading-secondary: 3.2rem;
-    --heading-tertiary: 2rem;
-    --main-paragraph: 1.8rem;
-    --button-text: 1.4rem;
-    --list-text: 1.6rem;
-    --menu-text: 1.3rem;
-    --faq-list: 1.8rem; */
+  --heading-primary-desktop: 4.8rem;
+  --main-paragraph: 1.8rem;
 }
 
 h1 {
@@ -397,6 +391,62 @@ button {
   border: 2px solid #252b46;
   -webkit-transition-duration: 0.1s;
           transition-duration: 0.1s;
+}
+
+@media (min-width: 767px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero .hero-text {
+    padding: 0;
+    margin: 0;
+    margin-top: 14rem;
+    width: 54rem;
+    height: 29.2rem;
+  }
+  .hero .hero-text .hero-heading {
+    font-size: var(--heading-primary-desktop);
+    text-align: left;
+    padding: 0;
+  }
+  .hero .hero-text .hero-paragraph {
+    font-size: var(--main-paragraph);
+    text-align: left;
+    padding: 0;
+  }
+  .hero .hero-text .hero-buttons {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .hero .hero-illustration-main {
+    margin-right: -68rem;
+    margin-top: 7rem;
+  }
+  .hero .hero-illustration-main .hero-illustration-1 {
+    width: 65rem;
+    height: 45rem;
+    margin-bottom: -1rem;
+  }
+  .hero .hero-illustration-main .hero-illustration-2 {
+    margin: 0;
+    width: 120rem;
+    height: 35.2rem;
+    border-radius: 316.5px;
+    margin-top: -32rem;
+  }
 }
 
 .feature-list {
