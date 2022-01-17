@@ -70,16 +70,18 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 10rem;
         .hero-text {
             padding: 0;
             margin: 0;
-            margin-top: 14rem;
+            margin-top: 9rem;
             width: 54rem;
             height: 29.2rem;
             .hero-heading {
                 font-size: var(--heading-primary-desktop);
                 text-align: left;
                 padding: 0;
+                margin-bottom: 3rem;
             }
             .hero-paragraph {
                 font-size: var(--main-paragraph);

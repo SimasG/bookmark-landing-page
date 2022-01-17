@@ -31,6 +31,7 @@ body {
   /* Font Size - Desktop (use later) */
   --menu-text: 1.3rem;
   --heading-primary-desktop: 4.8rem;
+  --heading-secondary-desktop: 3.2rem;
   --main-paragraph: 1.8rem;
 }
 
@@ -408,11 +409,12 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 10rem;
   }
   .hero .hero-text {
     padding: 0;
     margin: 0;
-    margin-top: 14rem;
+    margin-top: 9rem;
     width: 54rem;
     height: 29.2rem;
   }
@@ -420,6 +422,7 @@ button {
     font-size: var(--heading-primary-desktop);
     text-align: left;
     padding: 0;
+    margin-bottom: 3rem;
   }
   .hero .hero-text .hero-paragraph {
     font-size: var(--main-paragraph);
@@ -599,6 +602,68 @@ button {
 
 [data-tab-content].active {
   display: block;
+}
+
+.feature-border-desktop {
+  display: none;
+}
+
+.hr-features-desktop {
+  display: none;
+}
+
+@media (min-width: 767px) {
+  .h2-heading {
+    font-size: var(--heading-secondary-desktop);
+  }
+  .paragraph {
+    font-size: var(--main-paragraph);
+    width: 54rem;
+    margin: 1rem auto;
+  }
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 73rem;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .features .feature-list {
+    margin: 1rem auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .features .feature-list .hr-features {
+    display: none;
+  }
+  .features .feature-list .feature-link {
+    width: 24.3rem;
+    text-align: center;
+  }
+  .features .feature-list .feature-border {
+    background-color: #fa5757;
+    width: 14.3rem;
+    height: 0.4rem;
+    display: none;
+  }
+  .hr-features-desktop {
+    display: block;
+    border-top: 1px solid rgba(73, 93, 207, 0.2);
+    width: 73rem;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin: 0 auto;
+  }
 }
 
 .download-extension-container {

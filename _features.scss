@@ -134,3 +134,77 @@
 [data-tab-content].active {
     display: block;
 }
+
+.feature-border-desktop {
+    display: none;
+}
+
+.hr-features-desktop {
+    display: none;
+}
+
+
+
+@media (min-width: 767px) {
+
+// Ideally should be refactored to _styles.scss
+.h2-heading {
+    font-size: var(--heading-secondary-desktop);
+}
+
+.paragraph {
+    font-size: var(--main-paragraph);
+    width: 54rem;
+    margin: 1rem auto;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 73rem;
+    margin: 0 auto;
+    padding: 0;
+   .feature-list {
+       margin: 1rem auto;
+       flex-direction: row;
+       .hr-features {
+           display: none;
+       }
+       .feature-link {
+           width: 24.3rem;
+           text-align: center;
+       }
+       .feature-border {
+        background-color: $primary-soft-red;
+        width: 14.3rem;
+        height: 0.4rem;
+        display: none;
+        }
+    }
+
+    // .feature-border-desktop {
+    //     background-color: $primary-soft-red;
+    //     width: 14.3rem;
+    //     height: 0.4rem;  
+    // }
+}
+
+.hr-features-desktop {
+    display: block;
+    border-top: 1px solid rgba(73, 93, 207, 0.2);
+    width: 73rem;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin: 0 auto;
+}
+
+// Feature Heros
+.features-container {
+
+}
+
+
+
+}
