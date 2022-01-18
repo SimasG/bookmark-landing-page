@@ -815,10 +815,11 @@ button {
 }
 
 .download-extension-container .download-extension-subcontainer .download-subcontainer-child {
+  border-radius: 1.5rem;
   margin: 2rem auto;
   padding: 2.4rem;
-  -webkit-box-shadow: #7487dc 10px 10px 10px -12px;
-          box-shadow: #7487dc 10px 10px 10px -12px;
+  -webkit-box-shadow: #7487dc 0 0 30px -22px;
+          box-shadow: #7487dc 0 0 30px -22px;
 }
 
 .download-extension-container .download-extension-subcontainer .download-subcontainer-child .download-button {
@@ -880,6 +881,35 @@ button {
   width: 100%;
   height: 3px;
   margin-bottom: 2.4rem;
+}
+
+@media (min-width: 767px) {
+  .download-extension-container {
+    margin: 23rem auto;
+  }
+  .download-extension-container .download-extension-subcontainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 4rem;
+    padding: 0 9rem;
+  }
+  .download-extension-container .download-extension-subcontainer .download-subcontainer-child .download-hero .chrome-paragraph {
+    width: 23.2rem;
+  }
+  .download-extension-container .download-extension-subcontainer .download-subcontainer-child .download-hero .firefox-paragraph {
+    width: 23.2rem;
+  }
+  .download-extension-container .download-extension-subcontainer .download-subcontainer-child .download-hero .opera-paragraph {
+    width: 23.2rem;
+  }
+  .download-extension-container .download-extension-subcontainer .download-chrome {
+    margin-bottom: 10rem;
+  }
+  .download-extension-container .download-extension-subcontainer .download-opera {
+    margin-top: 10rem;
+  }
 }
 
 .faq-container-main {
