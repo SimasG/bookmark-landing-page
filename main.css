@@ -80,6 +80,7 @@ button {
   -webkit-box-shadow: #7487dc 0px 10px 10px -12px;
           box-shadow: #7487dc 0px 10px 10px -12px;
   cursor: pointer;
+  border: 2px solid transparent;
 }
 
 .main-container {
@@ -364,6 +365,7 @@ button {
   -webkit-box-shadow: #7487dc 0px 10px 10px -12px;
           box-shadow: #7487dc 0px 10px 10px -12px;
   width: 15.1rem;
+  border: 2px solid transparent;
 }
 
 .hero-buttons .hero-button-chrome:hover {
@@ -385,6 +387,7 @@ button {
   background-color: #F7F7F7;
   -webkit-box-shadow: #7487dc 0px 10px 10px -12px;
           box-shadow: #7487dc 0px 10px 10px -12px;
+  border: 2px solid transparent;
 }
 
 .hero-buttons .hero-button-firefox:hover {
@@ -977,6 +980,10 @@ button {
   opacity: 1;
 }
 
+.faq-container-main .faq-container .paragraph-answer {
+  text-align: left;
+}
+
 .faq-container-main .faq-container .hr-faq {
   border-top: 1px solid rgba(73, 93, 207, 0.2);
   width: 100%;
@@ -991,6 +998,13 @@ button {
 
 .active[data-faq-content] {
   display: block;
+}
+
+@media (min-width: 767px) {
+  .faq-container-main {
+    width: 54rem;
+    margin: 0 auto 12rem auto;
+  }
 }
 
 .signup-form-container {
@@ -1160,6 +1174,65 @@ button {
   margin-bottom: 1.6rem;
 }
 
+@media (min-width: 767px) {
+  .signup-form-container {
+    padding: 4.3rem 3.2rem 0.1rem 3.2rem;
+  }
+  .signup-form-container .signup-form-hero {
+    margin: 0 auto;
+    width: 50rem;
+  }
+  .signup-form-container .signup-form-hero .form-heading-smaller {
+    font-size: 13px;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+  }
+  .signup-form-container .signup-form-hero .signup-form-heading {
+    letter-spacing: -0.1px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    line-height: 4.5rem;
+  }
+  .signup-form-container form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 50rem;
+  }
+  .signup-form-container form .form-input-email {
+    margin-left: 3rem;
+    width: 30rem;
+  }
+  .signup-form-container form .contact-us-button {
+    width: 12.6rem;
+    margin-right: 3rem;
+  }
+  #form.invalid .input-box:before {
+    margin-top: 4rem;
+  }
+  #form.valid .input-box:before {
+    margin-top: 4rem;
+  }
+  #form.invalid .form-input-email {
+    margin-top: 4rem;
+  }
+  #form.valid .form-input-email {
+    margin-top: 4rem;
+  }
+  #form.invalid #text {
+    margin-left: 3rem;
+    width: 30rem;
+  }
+  #form.valid #text {
+    margin-left: 3rem;
+    width: 30rem;
+  }
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1234,5 +1307,38 @@ footer .social-media-icon-container .social-media-icon-footer {
 
 svg:hover path {
   fill: #fa5757;
+}
+
+@media (min-width: 767px) {
+  footer {
+    height: 8.8rem;
+    padding: 0 20.2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .logo-footer {
+    margin: 0;
+  }
+  footer .nav-ul-footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 29.5rem;
+    height: 1.7rem;
+    margin-left: -40rem;
+  }
+  footer .nav-ul-footer .nav-link-footer {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+  }
+  footer .social-media-icon-container {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

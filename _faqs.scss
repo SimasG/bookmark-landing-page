@@ -34,10 +34,15 @@
             .button-faq.active {
                 transform: rotate(225deg);
                 transition: transform 0.3s linear;
+                // Don't know how to make the active faq button red
+                // border: solid $primary-soft-red;
             }
             .paragraph-faq {
                 opacity: 1;
             }
+        }
+        .paragraph-answer {
+            text-align: left;
         }
         .hr-faq {
             border-top: 1px solid rgba(73, 93, 207, 0.2);
@@ -55,4 +60,13 @@
 
 .active[data-faq-content] {
     display: block;
+}
+
+
+
+@media (min-width: 767px) {
+    .faq-container-main {
+        width: 54rem;
+        margin: 0 auto 12rem auto;
+    }
 }

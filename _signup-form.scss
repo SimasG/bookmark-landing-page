@@ -135,3 +135,75 @@
     padding-left: 1.3rem;
     margin-bottom: 1.6rem;
 }
+
+
+@media (min-width: 767px) {
+    .signup-form-container {
+        padding: 4.3rem 3.2rem 0.1rem 3.2rem;
+        .signup-form-hero {
+            margin: 0 auto;
+            width: 50rem;
+            .form-heading-smaller {
+                font-size: 13px;
+                margin-top: -1rem;
+                margin-bottom: 2rem;
+            }
+            .signup-form-heading {
+                letter-spacing: -0.1px;
+                padding-left: 4rem;
+                padding-right: 4rem;
+                line-height: 4.5rem;
+            }
+        }
+        form {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 50rem;
+            .form-input-email {
+                margin-left: 3rem;
+                width: 30rem;
+            }
+            .contact-us-button {
+                width: 12.6rem;
+                margin-right: 3rem;
+            }
+        }
+    }
+
+    #form.invalid .input-box:before {
+        margin-top: 4rem;
+    }
+
+    #form.valid .input-box:before {
+        margin-top: 4rem;
+    }
+
+    #form.invalid .form-input-email {
+        margin-top: 4rem;
+    }
+
+    #form.valid .form-input-email {
+        margin-top: 4rem;
+    }
+
+    // #form-invalid .form-input-email {
+    //     margin-top: 4rem;
+    // }
+
+    // #form-valid .form-input-email {
+    //     margin-top: 4rem;
+    // }
+
+
+    #form.invalid #text {
+        margin-left: 3rem;
+        width: 30rem;
+    }
+
+    #form.valid #text {
+        margin-left: 3rem;
+        width: 30rem;
+    }
+
+
+}

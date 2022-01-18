@@ -39,6 +39,7 @@
         font-weight: 500;
         box-shadow: hsl(229, 60%, 66%) 0px 10px 10px -12px;
         width: 15.1rem;
+        border: 2px solid transparent;
         &:hover {
             color: $primary-soft-blue;
             background: white;
@@ -56,6 +57,7 @@
         opacity: 0.8;
         background-color: #F7F7F7;
         box-shadow: hsl(229, 60%, 66%) 0px 10px 10px -12px;
+        border: 2px solid transparent;
         &:hover {
             background: white;
             border: 2px solid $neutral-very-dark-blue;
