@@ -664,6 +664,134 @@ button {
     border-bottom: none;
     margin: 0 auto;
   }
+  .features-container .features-bookmark {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: none;
+  }
+  .features-container .features-bookmark .illustration-container-bookmark {
+    margin-right: 5rem;
+    margin-top: 10rem;
+  }
+  .features-container .features-bookmark .illustration-container-bookmark .illustration-bookmark-1 {
+    margin: 0;
+    width: 53.6rem;
+    height: 34.6rem;
+  }
+  .features-container .features-bookmark .illustration-container-bookmark .illustration-bookmark-2 {
+    height: 35.2rem;
+    width: 80rem;
+    margin-top: -26rem;
+    right: 58%;
+    position: absolute;
+  }
+  .features-container .features-bookmark .features-bookmark-hero {
+    margin-left: 5rem;
+  }
+  .features-container .features-bookmark .features-bookmark-hero .heading-bookmark {
+    text-align: left;
+  }
+  .features-container .features-bookmark .features-bookmark-hero .paragraph-bookmark {
+    text-align: left;
+    width: 44.5rem;
+  }
+  .features-container .features-bookmark .features-bookmark-hero .more-info-button {
+    position: absolute;
+  }
+  .features-container .features-searching {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: none;
+  }
+  .features-container .features-searching .illustration-container-searching {
+    margin-right: 5rem;
+    margin-top: 10rem;
+  }
+  .features-container .features-searching .illustration-container-searching .illustration-searching-1 {
+    margin: 0;
+    width: 53.6rem;
+    height: 34.6rem;
+  }
+  .features-container .features-searching .illustration-container-searching .illustration-searching-2 {
+    height: 35.2rem;
+    width: 80rem;
+    margin-top: -26rem;
+    right: 58%;
+    position: absolute;
+  }
+  .features-container .features-searching .features-searching-hero {
+    margin-left: 5rem;
+  }
+  .features-container .features-searching .features-searching-hero .heading-searching {
+    text-align: left;
+  }
+  .features-container .features-searching .features-searching-hero .paragraph-searching {
+    text-align: left;
+    width: 44.5rem;
+  }
+  .features-container .features-searching .features-searching-hero .more-info-button {
+    position: absolute;
+  }
+  .features-container .features-sharing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: none;
+  }
+  .features-container .features-sharing .illustration-container-sharing {
+    margin-right: 5rem;
+    margin-top: 10rem;
+  }
+  .features-container .features-sharing .illustration-container-sharing .illustration-sharing-1 {
+    margin: 0;
+    width: 53.6rem;
+    height: 34.6rem;
+  }
+  .features-container .features-sharing .illustration-container-sharing .illustration-sharing-2 {
+    height: 35.2rem;
+    width: 80rem;
+    margin-top: -26rem;
+    right: 58%;
+    position: absolute;
+  }
+  .features-container .features-sharing .features-sharing-hero {
+    margin-left: 5rem;
+  }
+  .features-container .features-sharing .features-sharing-hero .heading-sharing {
+    text-align: left;
+  }
+  .features-container .features-sharing .features-sharing-hero .paragraph-sharing {
+    text-align: left;
+    width: 44.5rem;
+  }
+  .features-container .features-sharing .features-sharing-hero .more-info-button {
+    position: absolute;
+  }
+  [data-tab-content] {
+    display: none;
+  }
+  [data-tab-content].active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .download-extension-container {

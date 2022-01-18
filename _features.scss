@@ -144,7 +144,6 @@
 }
 
 
-
 @media (min-width: 767px) {
 
 // Ideally should be refactored to _styles.scss
@@ -202,9 +201,124 @@
 
 // Feature Heros
 .features-container {
+    .features-bookmark {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        display: none;
+        .illustration-container-bookmark {
+            margin-right: 5rem;
+            margin-top: 10rem;
+            .illustration-bookmark-1 {
+                margin: 0;
+                width: 53.6rem;
+                height: 34.6rem;
+            }
+            .illustration-bookmark-2 {
+                height: 35.2rem;
+                width: 80rem;
+                margin-top: -26rem;
+                right: 58%;
+                position: absolute;
+            }
+        }
+        .features-bookmark-hero {
+            margin-left: 5rem;
+            .heading-bookmark {
+                text-align: left;
+            }
+            .paragraph-bookmark {
+                text-align: left;
+                width: 44.5rem;
+            }
+            .more-info-button {
+                position: absolute;
+            }
+        }
+    }
+
+    .features-searching {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        display: none;
+        .illustration-container-searching {
+            margin-right: 5rem;
+            margin-top: 10rem;
+            .illustration-searching-1 {
+                margin: 0;
+                width: 53.6rem;
+                height: 34.6rem;
+            }
+            .illustration-searching-2 {
+                height: 35.2rem;
+                width: 80rem;
+                margin-top: -26rem;
+                right: 58%;
+                position: absolute;
+            }
+        }
+        .features-searching-hero {
+            margin-left: 5rem;
+            .heading-searching {
+                text-align: left;
+            }
+            .paragraph-searching {
+                text-align: left;
+                width: 44.5rem;
+            }
+            .more-info-button {
+                position: absolute;
+            }
+        }
+    }
+
+    .features-sharing {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        display: none;
+        .illustration-container-sharing {
+            margin-right: 5rem;
+            margin-top: 10rem;
+            .illustration-sharing-1 {
+                margin: 0;
+                width: 53.6rem;
+                height: 34.6rem;
+            }
+            .illustration-sharing-2 {
+                height: 35.2rem;
+                width: 80rem;
+                margin-top: -26rem;
+                right: 58%;
+                position: absolute;
+            }
+        }
+        .features-sharing-hero {
+            margin-left: 5rem;
+            .heading-sharing {
+                text-align: left;
+            }
+            .paragraph-sharing {
+                text-align: left;
+                width: 44.5rem;
+            }
+            .more-info-button {
+                position: absolute;
+            }
+        }
+    }
 
 }
 
+// Did a weird workaround with the default value of display: none for each feature container
+[data-tab-content] {
+    display: none;
+}
+
+[data-tab-content].active {
+    display: flex;
+}
 
 
 }
