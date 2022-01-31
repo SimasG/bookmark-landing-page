@@ -194,7 +194,6 @@ button {
     -ms-flex-direction: column;
     flex-direction: column;
     background-color: #252b46;
-    opacity: 0.9;
     width: 30.9rem;
     text-align: center;
     -webkit-transition: 0.3s;

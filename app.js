@@ -30,6 +30,7 @@ tabs.forEach(tab => {
         // These lines are supposed to connect tab-target with tab-content and tab-underline with tab-underline-child.
         // I don't understand the connection though.
         const target = document.querySelector(tab.dataset.tabTarget)
+        console.log(target);
         const underline = document.querySelector(tab.dataset.tabUnderline)
 
         tabContents.forEach(tabContent => { 
